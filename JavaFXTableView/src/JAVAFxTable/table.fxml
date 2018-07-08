@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JAVAFxTable.Controller">
+   <children>
+      <TableView fx:id="tableview" layoutX="12.0" layoutY="24.0" onMouseClicked="#clickedColumn" prefHeight="229.0" prefWidth="572.0">
+        <columns>
+          <TableColumn fx:id="colName" onEditCommit="#onEditChanged" prefWidth="162.0" text="Name" />
+          <TableColumn fx:id="colPrice" prefWidth="224.0" text="Price" />
+            <TableColumn fx:id="colQuantity" prefWidth="183.0" text="Quantity" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textfieldName" layoutX="14.0" layoutY="353.0" promptText="Name" />
+      <TextField fx:id="textfieldPrice" layoutX="188.0" layoutY="353.0" promptText="Price" />
+      <TextField fx:id="textfieldQuantity" layoutX="365.0" layoutY="354.0" promptText="Quantity" />
+      <Button layoutX="532.0" layoutY="345.0" mnemonicParsing="false" onAction="#buttonAdd" text="Add" />
+      <Button layoutX="531.0" layoutY="306.0" mnemonicParsing="false" onAction="#buttonSHow" text="Show" />
+      <Button layoutX="532.0" layoutY="272.0" mnemonicParsing="false" onAction="#buttonRemove" text="remove" />
+
+
+   
+   </children>
+</AnchorPane>
