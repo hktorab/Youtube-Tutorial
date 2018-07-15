@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Tutorial_Java_DB_Connection:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Tutorial_Java_DB_Connection_jar</output-path>
+    <root id="archive" name="Tutorial_Java_DB_Connection.jar">
+      <element id="module-output" name="Tutorial_Java_DB_Connection" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mysql-connector-java-5.1.45-bin.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
