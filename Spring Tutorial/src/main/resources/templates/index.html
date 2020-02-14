@@ -5,7 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-<p th:text="${name}"></p>
-<p th:text="${name2}"></p>
+<form th:action="@{~/formmodel}" th:object="${myself}" method="post">
+    First Name: <input type="text" name="fname" th:field="*{fname}">
+    <br>
+    Last Name: <input type="text" name="lname" th:field="*{lname}">
+    <br>
+    School Name: <input type="text" name="school" th:field="*{school}">
+    <br>
+    University Name: <input type="text" name="university" th:field="*{university}">
+    <br>
+    <input type="submit">
+</form>
 </body>
 </html>
